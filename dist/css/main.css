@@ -107,7 +107,6 @@
 }
 
 .nav {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -133,7 +132,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   background: #272727;
   list-style-type: none;
@@ -297,7 +296,7 @@
 }
 
 .projects_bio_image {
-  height: 30vh;
+  height: 40vh;
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("/images/IMG_1842.JPG") center top;
   background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("/images/IMG_1842.JPG") center top;
@@ -320,10 +319,11 @@
 .projects_bio_image .text-secondary {
   font-size: 2rem;
   margin-bottom: 2rem;
+  margin-top: 7rem;
 }
 
 .projects-items {
-  width: 60%;
+  width: 50%;
   margin: 2rem auto 0 auto;
   display: -ms-grid;
   display: grid;
@@ -425,8 +425,8 @@
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../IMG_1842.JPG") center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../IMG_1842.JPG") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("/images/IMG_1842.JPG") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("/images/IMG_1842.JPG") center top;
   background-size: cover;
 }
 
@@ -535,6 +535,13 @@ header {
   z-index: 2;
   width: 100%;
   padding: 1rem;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main {
@@ -556,6 +563,26 @@ main .social-icons a {
 
 main .social-icons a:hover {
   color: #ff652f;
+}
+
+.projects-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects-btn svg {
+  margin-right: 0.5rem;
+}
+
+.sticky {
+  background-color: #272727;
 }
 
 footer {

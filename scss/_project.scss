@@ -2,7 +2,7 @@
   padding-bottom: 2rem;
 
   &_bio_image {
-    height: 30vh;
+    height: 40vh;
     width: 100%;
     background: linear-gradient(
         to right,
@@ -19,11 +19,12 @@
     .text-secondary {
       font-size: 2rem;
       margin-bottom: 2rem;
+      margin-top: 7rem;
     }
   }
 
   &-items {
-    width: 60%;
+    width: 50%;
     margin: 2rem auto 0 auto;
     display: grid;
     grid-template-columns: 1fr;
